@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 403270cf16e9b334fa6f1556d4dddcfc
-timeCreated: 1475953945
+guid: 36bd998de8a9d74468fd8e8785dba8c1
+timeCreated: 1475954798
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: FACE_CHUB
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

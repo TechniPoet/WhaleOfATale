@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 1bbb1e7e230c17243b7fa9eda874dc5a
-timeCreated: 1475953600
+guid: aef67af878d7e774a952c8207f2e63ee
+timeCreated: 1475954798
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: BOTTOM
+    100002: //RootNode
+    100004: MAIN
+    100006: SINE
+    400000: BOTTOM
+    400002: //RootNode
+    400004: MAIN
+    400006: SINE
+    2300000: BOTTOM
+    2300002: MAIN
+    3300000: BOTTOM
+    3300002: MAIN
+    4300000: MAIN
+    4300002: BOTTOM
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,7 +76,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: MAIN
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0

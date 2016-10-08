@@ -13,13 +13,24 @@ public class GhostScript : MonoBehaviour {
 		GameGod.Instance.AddGhost(this.transform);
 		rigid = GetComponent<Rigidbody>();
 		god = GameGod.Instance;
+		StartCoroutine(DoThings());
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		rigid.AddForce( Seperate());
-		rigid.AddForce(Cohesion());
+	// Update is called once per frame
+	void Update ()
+	{
+		
+	}
+
+	IEnumerator DoThings()
+	{
+		while (true)
+		{
+			rigid.AddForce(Seperate());
+			rigid.AddForce(Cohesion());
+			yield return new WaitForSeconds(UnityEngine.Random.Range(0, 1f));
+		}
+		
 	}
 
 

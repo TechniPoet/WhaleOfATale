@@ -8,6 +8,10 @@ public class MovementScript : MonoBehaviour
 {
 	public int playerID;
 	public float moveSpeed;
+	public float maxSpeed;
+
+	public float rotateSpeed;
+
 	Player player;
 	Rigidbody rigid;
 
@@ -21,7 +25,15 @@ public class MovementScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		rigid.AddForce( Vector3.forward * ( moveSpeed * player.GetAxis("vert axis")));
-		rigid.AddForce(Vector3.right * (moveSpeed * player.GetAxis("horiz axis")));
+		rigid.AddForce(transform.forward * ( moveSpeed * player.GetAxis("leftx")));
+		rigid.AddForce(transform.right * (moveSpeed * player.GetAxis("lefty")));
+
+		if (rigid.velocity.magnitude > maxSpeed)
+		{
+			rigid.velocity = rigid.velocity.normalized* maxSpeed;
+		}
+
+		Vector3 rotation = new Vector3(0, player.GetAxis("rightx"), 0 );
+		transform.Rotate(rotateSpeed * rotation);
 	}
 }

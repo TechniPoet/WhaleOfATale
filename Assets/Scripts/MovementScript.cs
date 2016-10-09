@@ -42,6 +42,7 @@ public class MovementScript : MonoBehaviour
 
 			Vector3 rotation = new Vector3(0, player.GetAxis("rightx"), 0);
 			transform.Rotate(p.playerSettings.rotateSpeed * rotation);
+			rigid.position = CircleBoundry.RoundedLocation(rigid.position);
 		}
 		
 	}

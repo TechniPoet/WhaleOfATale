@@ -35,7 +35,16 @@ public class PlayerScript : MonoBehaviour
 		if (player.GetButtonDown("RightTrigger") && mouth.onTail)
 		{
 			Debug.Log("bit tail");
+			TakeOver();
 		}
+	}
+
+	void TakeOver()
+	{
+		mouth.currTail.GetComponentInParent<PlayerScript>().playerSettings.isPlayer = true;
+		mouth.currTail.GetComponentInParent<PlayerScript>().camera.SetActive(true);
+		playerSettings.isPlayer = false;
+		camera.SetActive(false);
 	}
 	
 }

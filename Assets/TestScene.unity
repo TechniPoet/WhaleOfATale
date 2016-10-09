@@ -1455,7 +1455,7 @@ MonoBehaviour:
     maxSpeed: 10
     rotateSpeed: 1.2
     isPlayer: 1
-  camera: {fileID: 0}
+  camera: {fileID: 365265466}
 --- !u!1 &36614713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,7 +3852,7 @@ MonoBehaviour:
     maxSpeed: 10
     rotateSpeed: 1.2
     isPlayer: 0
-  camera: {fileID: 0}
+  camera: {fileID: 1154600351}
 --- !u!54 &115566513
 Rigidbody:
   m_ObjectHideFlags: 0

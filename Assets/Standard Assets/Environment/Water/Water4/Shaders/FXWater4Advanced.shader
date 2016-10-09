@@ -373,9 +373,6 @@ Subshader
 	GrabPass { "_RefractionTex" }
 	
 	Pass {
-			Blend SrcAlpha OneMinusSrcAlpha
-			ZTest LEqual
-			ZWrite Off
 			Cull Off
 		
 			CGPROGRAM
@@ -403,8 +400,6 @@ Subshader
 	
 	Pass {
 			Blend SrcAlpha OneMinusSrcAlpha
-			ZTest LEqual
-			ZWrite Off
 			Cull Off
 		
 			CGPROGRAM
@@ -432,9 +427,6 @@ Subshader
 	
 	Pass {
 			Blend SrcAlpha OneMinusSrcAlpha
-			ZTest LEqual
-			ZWrite Off
-			Cull Off
 		
 			CGPROGRAM
 		

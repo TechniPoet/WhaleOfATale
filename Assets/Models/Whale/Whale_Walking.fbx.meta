@@ -1,32 +1,62 @@
 fileFormatVersion: 2
-guid: aef67af878d7e774a952c8207f2e63ee
-timeCreated: 1475989809
+guid: 50204f8e9e650436685bc49a7783b356
+timeCreated: 1475996919
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: BOTTOM
-    100002: //RootNode
-    100004: MAIN
-    100006: SINE
-    100008: BODY
-    400000: BOTTOM
-    400002: //RootNode
-    400004: MAIN
-    400006: SINE
-    400008: BODY
-    2300000: BOTTOM
-    2300002: MAIN
-    2300004: BODY
-    3300000: BOTTOM
-    3300002: MAIN
-    3300004: BODY
-    4300000: MAIN
-    4300002: BOTTOM
-    4300004: BODY
+    100000: ikHandle1
+    100002: ikHandle2
+    100004: ikHandle3
+    100006: L_Arm
+    100008: L_Heel
+    100010: L_Knee
+    100012: L_Leg
+    100014: L_Tip
+    100016: L_Toe
+    100018: LEGS
+    100020: R_Arm
+    100022: R_Heel
+    100024: R_Knee
+    100026: R_Leg
+    100028: R_Tip
+    100030: R_Toe
+    100032: ROOT
+    100034: Tail
+    100036: Tail2
+    100038: Tail3
+    100040: Tail4
+    100042: TailEnd
+    100044: //RootNode
+    400000: ikHandle1
+    400002: ikHandle2
+    400004: ikHandle3
+    400006: L_Arm
+    400008: L_Heel
+    400010: L_Knee
+    400012: L_Leg
+    400014: L_Tip
+    400016: L_Toe
+    400018: LEGS
+    400020: R_Arm
+    400022: R_Heel
+    400024: R_Knee
+    400026: R_Leg
+    400028: R_Tip
+    400030: R_Toe
+    400032: ROOT
+    400034: Tail
+    400036: Tail2
+    400038: Tail3
+    400040: Tail4
+    400042: TailEnd
+    400044: //RootNode
+    4300000: LEGS
+    7400000: Take 001
     9500000: //RootNode
+    13700000: LEGS
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -52,7 +82,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importBlendShapes: 0
+    importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -66,8 +96,8 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 2
-    tangentImportMode: 2
+    normalImportMode: 0
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -81,13 +111,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: MAIN
+    rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

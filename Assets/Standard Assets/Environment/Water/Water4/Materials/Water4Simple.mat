@@ -78,7 +78,7 @@ Material:
     m_Floats:
     - first:
         name: _FresnelScale
-      second: 0.3897143
+      second: 4
     - first:
         name: _GerstnerIntensity
       second: 1

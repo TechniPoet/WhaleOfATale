@@ -18,7 +18,7 @@ Material:
     - first:
         name: _BumpMap
       second:
-        m_Texture: {fileID: 2800000, guid: fb6566c21f717904f83743a5a76dd0b0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2dd3788f8589b40bf82a92d76ffc5091, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -60,7 +60,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: e6f8288974c664a309d6c66de636978c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2dd3788f8589b40bf82a92d76ffc5091, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 1, y: 1}
     - first:
@@ -96,7 +96,7 @@ Material:
     - first:
         name: _ShoreTex
       second:
-        m_Texture: {fileID: 2800000, guid: 36dd0b22da8874ed38075789055ca664, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2dd3788f8589b40bf82a92d76ffc5091, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 1, y: 1}
     - first:
@@ -156,7 +156,7 @@ Material:
       second: 1.7931035
     - first:
         name: _FresnelScale
-      second: 0.6571428
+      second: 0.15
     - first:
         name: _GerstnerIntensity
       second: 1.6714286
@@ -183,7 +183,7 @@ Material:
       second: 1.4393286
     - first:
         name: _Shininess
-      second: 313.21838
+      second: 352
     - first:
         name: _ShoreTiling
       second: 56.862743
@@ -214,16 +214,16 @@ Material:
       second: {r: 0.04582553, g: 0.0182, b: 0.045714468, a: 0.027129691}
     - first:
         name: _BaseColor
-      second: {r: 0.15370905, g: 0.26813015, b: 0.29850745, a: 0.82}
+      second: {r: 0, g: 0.47794116, b: 0.41999358, a: 0.82}
     - first:
         name: _BumpDirection
-      second: {r: 40, g: 40, b: 40, a: -40}
+      second: {r: 0, g: 0, b: 0, a: 0}
     - first:
         name: _BumpMap_ST
       second: {r: 1, g: 1, b: 0, a: 0}
     - first:
         name: _BumpTiling
-      second: {r: 0.12, g: 0.07, b: 0.08, a: 0.06}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 1}
@@ -241,13 +241,13 @@ Material:
       second: {r: 0.6499999, g: -2.9203715, b: 1.6599998, a: -3.9363046}
     - first:
         name: _DistortParams
-      second: {r: 1.4399999, g: 0.24285714, b: 1.8530641, a: -0.53142846}
+      second: {r: 1.4399999, g: 0.24285714, b: 0.54, a: -0.53142846}
     - first:
         name: _Extinction
       second: {r: 4.5, g: 75, b: 300, a: 1}
     - first:
         name: _Foam
-      second: {r: 0.42666668, g: 0.48666668, b: 0, a: 0}
+      second: {r: 0, g: 0, b: 0, a: 0}
     - first:
         name: _FoamWaveParams
       second: {r: 0, g: 0.24918434, b: 3.3395782, a: 1}
@@ -256,7 +256,7 @@ Material:
       second: {r: 1, g: 1, b: 0, a: 0}
     - first:
         name: _GAmplitude
-      second: {r: 0.14, g: 0.76, b: 0.175, a: 0.225}
+      second: {r: 0.14, g: 0.76, b: 0.175, a: 0.62}
     - first:
         name: _GDirectionAB
       second: {r: 0.46914357, g: 0.35405126, b: -0.2, a: 0.1}
@@ -265,7 +265,7 @@ Material:
       second: {r: 0.7033888, g: -0.6799999, b: 0.7175735, a: -0.2}
     - first:
         name: _GFrequency
-      second: {r: 0.5, g: 0.38, b: 0.59, a: 0.6}
+      second: {r: 2.43, g: 0.38, b: 0.59, a: 0.6}
     - first:
         name: _GSpeed
       second: {r: -3, g: 2, b: 1, a: 3}
@@ -283,7 +283,7 @@ Material:
       second: {r: 1, g: 1, b: 0, a: 0}
     - first:
         name: _ReflectionColor
-      second: {r: 0.5794164, g: 0.6849238, b: 0.76119405, a: 0.43137255}
+      second: {r: 0, g: 0, b: 0, a: 0.43137255}
     - first:
         name: _ReflectionTex_ST
       second: {r: 1, g: 1, b: 0, a: 0}
@@ -316,7 +316,7 @@ Material:
       second: {r: 1, g: 1, b: 0.1, a: 0.1}
     - first:
         name: _SpecularColor
-      second: {r: 0.91791046, g: 0.91791046, b: 0.91791046, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _UnderwaterColor
       second: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}

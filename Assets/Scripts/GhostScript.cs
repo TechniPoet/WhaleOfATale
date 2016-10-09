@@ -27,6 +27,8 @@ public class GhostScript : MonoBehaviour {
 		{
 			rigid.velocity = rigid.velocity.normalized * god.ghostSettings.maxSpeed;
 		}
+
+		transform.rotation = Quaternion.LookRotation(rigid.velocity.normalized);
 	}
 
 	IEnumerator DoThings()

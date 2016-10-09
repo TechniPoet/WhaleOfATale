@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CircleBoundry : MonoBehaviour {
 
-	public const float radius = 100;
+	public const float radius = 180;
 	public const float height = 30;
 	
 	public static Vector3 RoundedLocation(Vector3 location)

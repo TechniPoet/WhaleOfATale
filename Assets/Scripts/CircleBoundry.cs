@@ -5,7 +5,7 @@ using UnityEngine;
 public class CircleBoundry : MonoBehaviour {
 
 	public const float radius = 100;
-	public const float height = 100;
+	public const float height = 30;
 	
 	public static Vector3 RoundedLocation(Vector3 location)
 	{
@@ -16,7 +16,7 @@ public class CircleBoundry : MonoBehaviour {
 
 			x = x < 0 ? x + 2 : x - 2;
 			z = z < 0 ? z + 2 : z - 2;
-			float y = location.y > 100 ? 3 : location.y;
+			float y = location.y > height ? 3 : location.y;
 			return new Vector3(-x, y, -z);
 		}
 		return location;

@@ -30,20 +30,41 @@ public class MovementScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (settingsSet && p.playerSettings.isPlayer)
+		if (settingsSet)
 		{
-			rigid.AddForce(transform.forward * (p.playerSettings.moveSpeed * player.GetAxis("leftx")));
-			rigid.AddForce(transform.right * (p.playerSettings.moveSpeed * player.GetAxis("lefty")));
 
-			if (rigid.velocity.magnitude > p.playerSettings.maxSpeed)
+			if (p.playerSettings.isPlayer)
 			{
-				rigid.velocity = rigid.velocity.normalized * p.playerSettings.maxSpeed;
-			}
+				rigid.AddForce(transform.forward * (p.playerSettings.moveSpeed * player.GetAxis("leftx")));
+				rigid.AddForce(transform.right * (p.playerSettings.moveSpeed * player.GetAxis("lefty")));
 
-			Vector3 rotation = new Vector3(0, player.GetAxis("rightx"), 0);
-			transform.Rotate(p.playerSettings.rotateSpeed * rotation);
-			rigid.position = CircleBoundry.RoundedLocation(rigid.position);
+				if (rigid.velocity.magnitude > p.playerSettings.maxSpeed)
+				{
+					rigid.velocity = rigid.velocity.normalized * p.playerSettings.maxSpeed;
+				}
+
+				Vector3 rotation = new Vector3(0, player.GetAxis("rightx"), 0);
+				transform.Rotate(p.playerSettings.rotateSpeed * rotation);
+				rigid.position = CircleBoundry.RoundedLocation(rigid.position);
+			}
+			else
+			{
+
+				rigid.AddForce(transform.forward * (p.playerSettings.moveSpeed * Random.Range(.3f, 1f)));
+				rigid.AddForce(transform.right * (p.playerSettings.moveSpeed * Random.Range(.3f, 1f)));
+
+				if (rigid.velocity.magnitude > p.playerSettings.maxSpeed)
+				{
+					rigid.velocity = rigid.velocity.normalized * p.playerSettings.maxSpeed;
+				}
+				if (Random.Range(0f,1f) < .5f)
+				{
+					Vector3 rotation = new Vector3(0, Random.Range(-3f, 3f), 0);
+					transform.Rotate(p.playerSettings.rotateSpeed * rotation);
+				}
+				
+				rigid.position = CircleBoundry.RoundedLocation(rigid.position);
+			}
 		}
-		
 	}
 }

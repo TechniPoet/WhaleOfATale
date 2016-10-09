@@ -11,6 +11,7 @@ public class PlayerSettings
 	public float maxSpeed;
 	public float rotateSpeed;
 	public bool isPlayer;
+	public int reqGhosts;
 }
 
 
@@ -33,20 +34,24 @@ public class PlayerScript : MonoBehaviour
 
 	void Update()
 	{
-		if (player.GetButtonDown("RightTrigger") && mouth.onTail)
+		if (playerSettings.isPlayer)
 		{
-			Debug.Log("bit tail");
-			TakeOver();
-		}
-		if (player.GetButtonDown("RightTrigger") && mouth.ghosts.Count > 0)
-		{
-			capturedGhosts.AddRange(mouth.ghosts);
-			foreach (GameObject g in mouth.ghosts)
+			if (player.GetButtonDown("RightTrigger") && mouth.onTail && mouth.currTail.GetComponentInParent<PlayerScript>().playerSettings.reqGhosts <= capturedGhosts.Count)
 			{
-				g.GetComponent<GhostScript>().Destroy();
+				Debug.Log("bit tail");
+				TakeOver();
 			}
-			mouth.ghosts.Clear();
+			if (player.GetButtonDown("RightTrigger") && mouth.ghosts.Count > 0)
+			{
+				capturedGhosts.AddRange(mouth.ghosts);
+				foreach (GameObject g in mouth.ghosts)
+				{
+					g.GetComponent<GhostScript>().Destroy();
+				}
+				mouth.ghosts.Clear();
+			}
 		}
+		
 	}
 
 	void TakeOver()

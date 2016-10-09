@@ -213,4 +213,10 @@ public class GhostScript : MonoBehaviour {
 		Vector3 steer = desired - rigid.velocity;
 		return steer;
 	}
+
+	public void Destroy()
+	{
+		god.RemoveGhost(this.transform);
+		Destroy(this.gameObject);
+	}
 }

@@ -20,6 +20,7 @@ public class PlayerScript : MonoBehaviour
 	public MovementScript movement;
 	public PlayerSettings playerSettings;
 	public GameObject camera;
+	public List<GameObject> capturedGhosts = new List<GameObject>();
 	Player player;
 	// Use this for initialization
 	void Start ()
@@ -36,6 +37,15 @@ public class PlayerScript : MonoBehaviour
 		{
 			Debug.Log("bit tail");
 			TakeOver();
+		}
+		if (player.GetButtonDown("RightTrigger") && mouth.ghosts.Count > 0)
+		{
+			capturedGhosts.AddRange(mouth.ghosts);
+			foreach (GameObject g in mouth.ghosts)
+			{
+				g.GetComponent<GhostScript>().Destroy();
+			}
+			mouth.ghosts.Clear();
 		}
 	}
 

@@ -14,4 +14,9 @@ public class GameGod : UnitySingleton<GameGod>
 	{
 		ghosts.Add(t);
 	}
+
+	public void RemoveGhost(Transform t)
+	{
+		ghosts.Remove(t);
+	}
 }

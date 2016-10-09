@@ -11,7 +11,9 @@ public class PlayerSettings
 	public float maxSpeed;
 	public float rotateSpeed;
 	public bool isPlayer;
+	public bool isLast;
 	public int reqGhosts;
+
 }
 
 
